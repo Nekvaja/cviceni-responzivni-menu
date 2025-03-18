@@ -43,3 +43,69 @@ a:hover {
 	- 640px
 	- 1000px
 */
+
+/* výchozí nastavení  */
+.hlavicka {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu ul {
+  padding: 0;
+}
+
+.menu li {
+  list-style-type: none;
+  margin-top: 2px;
+}
+
+.menu li:first-child {
+  margin-top: 0;
+}
+
+.logo {
+  margin-bottom: 20px;
+}
+
+.menu li {
+  text-align: center;
+}
+
+/* BP 640px */
+@media (min-width: 640px) {
+.menu ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu li {
+  margin-top: 0;
+  margin-left: 2px;
+  flex: 1;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+
+.menu ul {
+  justify-content: space-between;
+}
+
+}
+
+/* BP 1000px */
+@media (min-width: 1000px) {
+.hlavicka {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+.logo {
+  margin-bottom: 0;
+}
+
+}
