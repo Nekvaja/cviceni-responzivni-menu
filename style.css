@@ -51,13 +51,20 @@ a:hover {
   
 }
 
+.menu {
+  display: flex;
+}
+
 .menu ul {
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .menu li {
   list-style-type: none;
   margin-top: 2px;
+  text-align: center;
 }
 
 .menu li:first-child {
@@ -68,21 +75,17 @@ a:hover {
   margin-bottom: 20px;
 }
 
-.menu li {
-  text-align: center;
-}
 
 /* BP 640px */
 @media (min-width: 640px) {
 .menu ul {
   display: flex;
-  flex-direction: row;
 }
 
 .menu li {
   margin-top: 0;
   margin-left: 2px;
-  flex: 1;
+  width: 25%;
 }
 
 .menu li:first-child {
@@ -98,7 +101,6 @@ a:hover {
 /* BP 1000px */
 @media (min-width: 1000px) {
 .hlavicka {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
